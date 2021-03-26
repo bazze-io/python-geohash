@@ -4,12 +4,12 @@
 Setup.py of geohashlite
 """
 
-from setuptools import setup, Extension
+from setuptools import Extension, setup
 
 # requiring C++ here for Windows support.
-c1 = Extension('_geohash',
-               sources=['src/geohash.cpp', ],
-               define_macros=[('PYTHON_MODULE', 1), ])
+# c1 = Extension('_geohash',
+#                sources=['src/geohash.cpp', ],
+#                define_macros=[('PYTHON_MODULE', 1), ])
 
 setup(
     name="geohashlite",
@@ -20,8 +20,9 @@ setup(
     license="LICENSE",
     description="A python library for interacting with geohash",
     long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     install_requires=[
         'shapely',
     ],
-    ext_modules=[c1],
+    # ext_modules=[c1],
 )
