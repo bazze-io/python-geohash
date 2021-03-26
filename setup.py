@@ -13,7 +13,7 @@ from setuptools import Extension, setup
 
 setup(
     name="geohashlite",
-    version="0.3.1",
+    version="0.3.2",
     author="Xuzhou Qin",
     author_email="me@qinxuzhou.com",
     packages=["geohashlite"],
